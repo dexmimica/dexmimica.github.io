@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DexMimica learns task-specific priors from human hand demonstrations and blends a learned tracking controller with online retargeting for robust real-world dexterous teleoperation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DexMimica: Mixed-Autonomy Data Collection for Dexterous Manipulation">
+  <meta property="og:description" content="DexMimica learns task-specific priors from human hand demonstrations and blends a learned tracking controller with online retargeting for robust real-world dexterous teleoperation.">
+  <meta property="og:url" content="https://dexmimica.github.io/">
+  <meta property="og:image" content="https://dexmimica.github.io/assets/dexmimica-teaser-v2.png">
+  <title>DexMimica — Mixed-Autonomy Data Collection for Dexterous Manipulation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/%3E" type="image/svg+xml">
+  <script>
+    // Apply before first paint to avoid a light flash when dark mode is saved.
+    (() => {
+      let saved;
+      try { saved = localStorage.getItem('project-website-color-scheme'); } catch { /* Storage can be unavailable in local previews. */ }
+      document.documentElement.dataset.colorScheme = saved === 'light' || saved === 'dark'
+        ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="render-content.js" defer></script>
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#project">Skip to content</a>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="wordmark" href="#project" aria-label="Project overview">
+        <span data-content="paper.name"></span>
+      </a>
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#project" aria-current="location"><span class="nav-index">00</span><span class="nav-text">Project</span></a>
+      </nav>
+    </aside>
+    <main id="main-content">
+      <header class="project-header" id="project" tabindex="-1">
+        <div class="project-heading">
+          <h1></h1>
+          <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode">
+            <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg>
+            <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg>
+          </button>
+        </div>
+        <p class="authors"></p>
+        <p class="affiliations"><span class="contribution"></span></p>
+        <p class="conference"></p>
+        <div class="paper-resources">
+          <nav class="paper-links" aria-label="Project resources"></nav>
+          <div class="paper-logos"></div>
+        </div>
+      </header>
+      <div class="project-teaser"></div>
+      <div class="sections"></div>
+      <noscript><p class="prose">Enable JavaScript to view this page.</p></noscript>
+      <footer class="page-footer">
+        <span data-content="paper.name"></span>
+        <div class="footer-links">
+          <a class="template-credit" href="https://github.com/MandiZhao/project-website-template" target="_blank" rel="noopener"><span aria-hidden="true">☆</span> Template <span aria-hidden="true">↗</span></a>
+          <a href="#project">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
